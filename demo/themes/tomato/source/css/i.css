@@ -1,5 +1,4 @@
 body,h1,h2,h3,h4,h5,p,form,ol,ul{margin:0;}
-ol,ul{padding:0;}
 html{font:1em "Avenir Next",Avenir,"Helvetica Neue",Helvetica,"Lantinghei SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑", "STHeiti","WenQuanYi Micro Hei",SimSun,sans-serif;color:#222;}
 
 
@@ -25,12 +24,6 @@ img{border:0 none;}
 a,input,button{transition:.3s ease;}
 
 xmp{display:none;}
-
-html{
-	-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;
-	text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}
-
-
 
 @import 'animation.css';
 
@@ -83,18 +76,9 @@ article{padding:2em 0;}
 
 
 .p-text{word-wrap:break-word;word-break:normal;}
-.p-text h3{padding:2em 10px 1em;font-size:1.5em;}
-.p-text h4{padding:1em 10px 0;font-size:1.3em;}
-.p-text h5{font-size:1.5em;}
-.p-text p{line-height:2em;padding:1em 0;}/*text-indent:2em;*/
 .p-text img{max-width:100%;}
 .p-text p img{max-width:100%;display:block;margin:0em auto;border-radius:.5em;}
 .p-text del{color:#999;font-size:.8em;}
-
-.p-text blockquote{background:#EEE;color:#333;}
-
-
-.p-text ul,ol{list-style-type:disc;padding:1em 1em 1em 2em;}
 
 .p-text .more{padding:0 0 2em;text-align:center;text-indent:0;}
 .p-text .more a{color:#666;}
@@ -187,29 +171,66 @@ header,footer,article,aside,section,nav,menu,hgroup,details,dialog,figure,figcap
 
 header{display:none;}
 
-body,input,textarea,select,button{
-	text-rendering:optimizeLegibility;
-	-webkit-font-smoothing:subpixel-antialiased;
-}
-
 
 @media(max-width:800px){
 	#m{width:720px;}
 	.p-text img{max-width:672px;}
 	.p-text p img{max-width:720px;}
 	#m .DS{width:680px;font-size:1.4em;}
-
+	#m .p-text blockquote{
+	    -webkit-margin-before: 0.5em;
+	    -webkit-margin-after: 0.5em;
+	    -webkit-margin-start: 0.5em;
+	    -webkit-margin-end: 0.5em;
+	}
+	#m .p-text code {
+		-webkit-margin-before: 0.5em;
+	    -webkit-margin-after: 0.5em;
+	    -webkit-margin-start: 0.5em;
+	    -webkit-margin-end: 0.5em;
+	}
+	#m .p-text h1,h2,h3,h4,h5,h6 {
+		-webkit-margin-before: 0.5em;
+	    -webkit-margin-after: 0.5em;
+	    -webkit-margin-start: 0.5em;
+	    -webkit-margin-end: 0.5em;
+	}
+	#m .p-text ul,ol {
+		-webkit-margin-before: 1.5em;
+	    -webkit-margin-after: 1.5em;
+	    -webkit-margin-start: 1.5em;
+	    -webkit-margin-end: 1.5em;
+	    font-size: 0.8em;
+	}
 	nav a[href="#!music"]{display:none;}
 
 	p{-webkit-text-size-adjust:100%;font-size:1.5em;}
 }
+
 @media(max-width:720px){
 	nav{width:100%;overflow:hidden;}
 	.cover img,.p-text p img{border-radius:0;}
-	.p-text p{padding:1em;}
+	.p-text p{padding:0.5em;}
 	.p-text p img{margin:0 -1em;}
 
-
+	#m .p-text blockquote{
+	    -webkit-margin-before: 0.5em;
+	    -webkit-margin-after: 0.5em;
+	    -webkit-margin-start: 0.5em;
+	    -webkit-margin-end: 0.5em;
+	}
+	#m .p-text code {
+		-webkit-margin-before: 0.5em;
+	    -webkit-margin-after: 0.5em;
+	    -webkit-margin-start: 0.5em;
+	    -webkit-margin-end: 0.5em;
+	}
+	#m .p-text h1,h2,h3,h4,h5,h6 {
+		-webkit-margin-before: 0.5em;
+	    -webkit-margin-after: 0.5em;
+	    -webkit-margin-start: 0.5em;
+	    -webkit-margin-end: 0.5em;
+	}
 	.music #m{width:auto !important;}
 }
 

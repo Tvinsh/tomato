@@ -1,6 +1,6 @@
 ---
 title: git使用中的撤销
-photo: http://ww2.sinaimg.cn/mw1024/a15b4afely1fjbzuwk8ifg21400k0jrp
+photo: /img/git.png
 excerpts: 「不会百度么？」是一个简单的百度使用教程生成工具，可以一键生成动画教程。 
 ---
 
@@ -77,4 +77,4 @@ git diff 可以查看文件修改前后的对比，在不同的阶段，需要�
 
 顺便看下 HEAD 参数，```HEAD``` 指向的是 本地仓库中最新提交的版本，```HEAD^``` 指向的是最新提交的前一次commit， ```HEAD~2``` 指向前一次的前一次，依此类推, 举例 ```git reset --hard HEAD~3``` ,即删除最近的三个commit（删除HEAD, HEAD^, HEAD~2），将HEAD指向HEAD~3。
 
-![git-HEAD](img/git-HEAD.png)
+![git-HEAD](/img/git-HEAD.png)
