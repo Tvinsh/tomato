@@ -20,8 +20,6 @@ excerpts: 「不会百度么？」是一个简单的百度使用教程生成工�
 
 这里只介绍一些必须的dom结构，业务需要的其他结构可以自行添加，主要分为3大部分，1是无刷新提交表单，此表单的作用是将本地图片提交到后台然后后台返回供我们裁剪预览，2是隐藏的iframe，配合实现无刷新上传，3是入库表单，作用是将裁剪的图片上传给服务器，预览裁剪的工作在入库表单中实现。
 
-{% iframe https://codepen.io/nervouself/embed/dNGLVp?height=265&theme-id=0&slug-hash=dNGLVp&default-tab=css%2Cresult&user=nervouself&embed-version=2&pen-title=shadow1 100% 500 %}
-
 >1.无刷新上传表单，即选择图片后上传供裁剪的表单，基本结构如下
 
 ```html
